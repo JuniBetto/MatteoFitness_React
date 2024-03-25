@@ -1,0 +1,24 @@
+.fatherAdressClass{
+    text-decoration: none;  
+    background-color: #A7CBF6;
+    padding: 10px;    
+    color: #161313;
+}
+
+.iconAdressClass{
+    padding-right: 10px;
+}
+.bgColorNumber1{
+    background-color:#44F27F ;
+}
+.bgColorNumber2{
+    background-color:#44F27F ;
+    border-top-right-radius: 65px;
+}
+.bgColorAdress{
+    background-color:transparent ;
+}
+.bgColorEmail{
+    background-color:#161313;  
+    color: white;  
+}

@@ -8,6 +8,7 @@ import { IconDefinition } from '@fortawesome/free-solid-svg-icons'
 export type servizioType={
     icon:IconDefinition|null,
     title:string,
+    classCss:string|null
 }
 const servizio:FunctionComponent<servizioType>=({icon,title})=> {
   return (

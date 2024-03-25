@@ -8,7 +8,7 @@ type navBarType={
  const MynavBar:FunctionComponent<navBarType>=({items}) =>{
   return (
     <nav className='fatherNavBarClass'>
-     {items.map((element)=> <Servizio icon={element.icon} title={element.title}/>)}
+     {items.map((element)=> <Servizio icon={element.icon} title={element.title} classCss={null}/>)}
     </nav>
   )
 }
