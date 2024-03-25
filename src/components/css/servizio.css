@@ -4,7 +4,7 @@
     border-radius:6px ;
     padding: 10px 10px ;
     margin: 4px 5px;
-    width: 70px;
+    display: block;
     text-align: center;   
     list-style-type: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -6,13 +6,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons'
 
 export type servizioType={
-    icon?:IconDefinition,
+    icon:IconDefinition|null,
     title:string,
 }
 const servizio:FunctionComponent<servizioType>=({icon,title})=> {
   return (
         <Link className='fatherLiClass linkLiClass' to={`/${title}`}>
-            {icon != null?<FontAwesomeIcon icon={icon} />:null} {title}
+            {icon != null?<FontAwesomeIcon icon={icon} size='1x' />:null} {title}
         </Link>  
   )
 }
