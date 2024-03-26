@@ -3,24 +3,24 @@ import { faHouse, faUsersGear } from '@fortawesome/free-solid-svg-icons'
 import MynavBar from '../components/mynavbar'
 import { servizioType } from '../components/servizio'
 import UpNavBar from '../components/upNavBar'
+import '../components/css/welcome.css'
+import ListServizi from "../components/list_servizi";
+import Contents from '../components/contents'
 
 function Welcome() {
-  var element:servizioType[] = [{title:"home" ,icon: faHouse},
-  {title:"Staff",icon:faUsersGear},
-  {title:"Convenzioni",icon:faUsersGear},
-  {title:"Contacts",icon:faUsersGear},
-  {title:"Prenota",icon:faUsersGear},
-  {title:"About",icon:faUsersGear}]
+  var element:servizioType[] = [{title:"home" ,icon: faHouse,classCss:null},
+  {title:"Staff",icon:faUsersGear,classCss:null},
+  {title:"Convenzioni",icon:faUsersGear,classCss:null},
+  {title:"Contacts",icon:faUsersGear,classCss:null},
+  {title:"Prenota",icon:faUsersGear,classCss:null},
+  {title:"About",icon:faUsersGear,classCss:null}]
   return (
-    <div>
+    <div className='fatherWelcomeClass'>
       <UpNavBar />
       <MynavBar items={element} />
-
-      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Consectetur, non. Deserunt ipsa quae ab atque autem eaque, 
-        architecto eveniet officia reprehenderit laborum,
-         repudiandae saepe itaque accusantium nulla voluptatum alias totam.
-         </h1>
+      <ListServizi/>
+     <Contents/>
+      
          
     </div>
   )

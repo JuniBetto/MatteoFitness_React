@@ -1,7 +1,7 @@
 .fatherupNavBarClass{
     padding: 2px;
     margin: 1px;    
-    display: flex;    
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content:start;
@@ -12,7 +12,6 @@
     align-items: center;
     background-color: #161313;
     flex-direction: row;
-    width: 100%;
     justify-content:space-between;
 }
 @media (max-width:700px){

@@ -1,0 +1,19 @@
+.fatherListServiziClass{
+    position: relative;
+    width: 25%;
+    background-color: #e56666;
+}
+.iconArrow{
+    display: none;
+}
+
+@media (max-width:700px){
+    .iconArrow{
+        display: block;
+        position: relative;
+        top: 50%;
+        left: 95%;
+    }
+    
+}
+
