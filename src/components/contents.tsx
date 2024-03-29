@@ -1,15 +1,13 @@
-import { FunctionComponent } from "react"
+import { FunctionComponent, ReactNode } from "react"
 import './css/contents.css';
+type contentType={
+  pageInsideContent:ReactNode
+}
 
-
-const contents:FunctionComponent=()=> {
+const contents:FunctionComponent<contentType>=({pageInsideContent})=> {
   return (
     <div className='fatherContentClass'>
-      <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-        Consectetur, non. Deserunt ipsa quae ab atque autem eaque, 
-        architecto eveniet officia reprehenderit laborum,
-         repudiandae saepe itaque accusantium nulla voluptatum alias totam.
-         </h1>
+      {pageInsideContent}
         
       </div>
   )

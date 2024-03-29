@@ -1,0 +1,8 @@
+.fatherFooterClass{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    height: 60px;
+    background: #90d61f;
+}

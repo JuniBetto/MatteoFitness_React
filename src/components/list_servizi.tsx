@@ -1,13 +1,22 @@
 
-import { FunctionComponent } from 'react'
+import { FunctionComponent, useRef } from 'react'
 import './css/list_servizi.css'
-import { faArrowAltCircleLeft, faArrowAltCircleRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import {  faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Servizio from './servizio'
+import { navBarType } from './mynavbar'
+import { v4 as uuidv4 } from 'uuid';
 
-const listServizi:FunctionComponent=()=> {
+
+const listServizi:FunctionComponent<navBarType>=({items})=> {
+  const listServiziElement=useRef(null);
+
+
   return (
-    <div className='fatherListServiziClass'>
-     <FontAwesomeIcon className='iconArrow ' icon={faChevronLeft} size='1x' />   list_servizi</div>
+    <div ref={listServiziElement} className='fatherListServiziClass'>
+     <FontAwesomeIcon className='iconArrow ' icon={faChevronLeft} size='1x' /> 
+     {items.map((element)=> <Servizio  key={uuidv4()} icon={element.icon} title={element.title} classCss={null} onCliclServizio={element.onCliclServizio} />)}
+     </div>
   )
 }
 
