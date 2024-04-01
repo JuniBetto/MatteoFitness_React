@@ -2,7 +2,9 @@
     position: relative;
     width: 30%;
     background-color: #e56666;
+   transition: width 3s;
 }
+
 
 .fatherListServiziClass .fatherLiClass{
 color: white;
@@ -26,4 +28,5 @@ background-color: black;
         }
     
 }
+
 

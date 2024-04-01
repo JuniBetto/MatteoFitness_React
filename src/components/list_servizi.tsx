@@ -13,9 +13,14 @@ const listServizi:FunctionComponent<navBarType>=({items})=> {
 
 
   return (
-    <div ref={listServiziElement} className='fatherListServiziClass'>
+    <div ref={listServiziElement} className='fatherListServiziClass '>
      <FontAwesomeIcon className='iconArrow ' icon={faChevronLeft} size='1x' /> 
-     {items.map((element)=> <Servizio  key={uuidv4()} icon={element.icon} title={element.title} classCss={null} onCliclServizio={element.onCliclServizio} />)}
+     {items.map((element)=> <Servizio  key={uuidv4()}
+      icon={element.icon}
+      title={element.title}
+      classCss={null}
+      onCliclServizio={element.onCliclServizio} 
+      servizioTypeButton={element.servizioTypeButton} />)}
      </div>
   )
 }

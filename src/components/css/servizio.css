@@ -15,3 +15,12 @@
 .linkLiClass{
     text-decoration: none;     
 }
+.btNavBar{}
+.isPrenote{
+    background-color: #d01515;
+    color: white;
+}
+.isLink{
+    background-color: transparent;
+}
+

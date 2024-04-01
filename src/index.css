@@ -1,4 +1,14 @@
 html body
 {
-    min-height:100vh;
+    min-height:50vh;
+    min-width: 100%;
+}
+.fatherBody{
+    min-height:95vh;
+    min-width: 100%;
+}
+
+.fatherBodyRoot{
+    min-height:98vh;
+    min-width: 100%;
 }

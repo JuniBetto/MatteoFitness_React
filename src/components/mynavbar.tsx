@@ -1,5 +1,5 @@
 import { FunctionComponent, MouseEvent, useRef } from "react"
-import Servizio, { servizioType } from "./servizio"
+import Servizio, { ServizioTypeButton, servizioType } from "./servizio"
 import './css/mynavbar.css'
 import { v4 as uuidv4 } from 'uuid';
 
@@ -10,7 +10,10 @@ export type navBarType={
   const navbbarElement=useRef(null);
   return (
     <nav  ref={navbbarElement} className='fatherNavBarClass'>
-     {items.map((element)=> <Servizio key={uuidv4()} icon={element.icon} title={element.title} classCss={null} onCliclServizio={element.onCliclServizio}  />)}
+     {items.map((element)=> <Servizio key={uuidv4()}
+      icon={element.icon} title={element.title} classCss={null}
+       onCliclServizio={element.onCliclServizio}
+      servizioTypeButton={element.servizioTypeButton}  />)}
     </nav>
   )
 }
